@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Penguin Fashion with Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <nav class="">
-        
+    <style>
+      .font-roboto {
+        font-family: "Lato", sans-serif;
+        font-family: "Roboto", sans-serif;
+      }
+      .font-roboto {
+        font-family: "Bebas Neue", sans-serif;
+        font-family: "Lato", sans-serif;
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="bg-[#FFFBF0] flex justify-between items-center p-6 px-20 shadow-md"
+    >
+      <div class="icon">
+        <img src="./icons/logo.png" alt="" class="w-60" />
+      </div>
+      <div class="nav-main font-roboto">
+        <ul class="flex justify-evenly items-center gap-10">
+          <li>Home</li>
+          <li>Product</li>
+          <li>About us</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
     </nav>
-</body>
+    <main>
+      <section class="title flex justify-evenly items-center">
+        <div class="title-content">
+          <div class="title-header">
+            <span>Be the Penguins</span> <br />of Winter
+          </div>
+          <div class="title-sub">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </div>
+          <div class="button">
+            <button>BUY NOW</button>
+          </div>
+        </div>
+        <div class="title-img">
+          <img src="./images/model.png" alt="" />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
