@@ -1,99 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Penguin Fashion with Tailwind</title>
-    <style>
-      .font-roboto {
-        font-family: "Lato", sans-serif;
-        font-family: "Roboto", sans-serif;
-      }
-      .font-bebus {
-        font-family: "Bebas Neue", sans-serif;
-      }
-      .gradient-green {
-        background: rgb(164, 188, 70);
-        background: linear-gradient(
-          180deg,
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Penguin Fashion with Tailwind</title>
+  <style>
+    .font-roboto {
+      font-family: "Lato", sans-serif;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .font-bebus {
+      font-family: "Bebas Neue", sans-serif;
+    }
+
+    .gradient-green {
+      background: rgb(164, 188, 70);
+      background: linear-gradient(180deg,
           rgba(164, 188, 70, 1) 45%,
-          rgba(133, 160, 25, 1) 75%
-        );
-      }
-    </style>
-  </head>
+          rgba(133, 160, 25, 1) 75%);
+    }
+  </style>
+</head>
 
-  <body>
-    <nav
-      class="bg-[#FFFBF0] flex justify-between items-center p-6 px-20 shadow-md"
-    >
-      <div class="icon">
-        <img src="./icons/logo.png" alt="" class="w-60" />
+<body>
+  <nav class="w-full bg-[#FFFBF0] flex justify-between items-center p-6 px-20 shadow-md">
+    <div class="icon">
+      <img src="./icons/logo.png" alt="" class="w-60" />
+    </div>
+    <div class="nav-main font-roboto">
+      <ul class="hidden md:flex justify-evenly items-center gap-10">
+        <li>Home</li>
+        <li>Product</li>
+        <li>About us</li>
+        <li>Contact us</li>
+      </ul>
+      <div class="menu md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
       </div>
-      <div class="nav-main font-roboto">
-        <ul class="hidden md:flex justify-evenly items-center gap-10">
-          <li>Home</li>
-          <li>Product</li>
-          <li>About us</li>
-          <li>Contact us</li>
-        </ul>
-        <div class="menu md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>              
+    </div>
+  </nav>
+  <main>
+    <section
+      class="w-full title flex flex-col justify-center items-center bg-[#FFFBF0] py-10 md:flex-row md:justify-evenly">
+      <div class="title-content flex flex-col gap-3">
+        <div class="title-header font-bebus text-7xl">
+          <span class="text-[#FABE4C]">Be the Penguins</span> <br />of Winter
+        </div>
+        <div class="title-sub font-roboto text-base w-80">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </div>
+        <div class="button">
+          <button class="gradient-green p-4 rounded-lg font-roboto text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 inline">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+            </svg><span class="px-2">BUY NOW</span>
+          </button>
         </div>
       </div>
-    </nav> 
-    <main>
-      <section class="title flex flex-col justify-center items-center bg-[#FFFBF0] py-10 md:flex-row md:justify-evenly">
-        <div class="title-content flex flex-col gap-3">
-          <div class="title-header font-bebus text-7xl">
-            <span class="text-[#FABE4C]">Be the Penguins</span> <br />of Winter
-          </div>
-          <div class="title-sub font-roboto text-base w-80">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </div>
+      <div class="title-img w-96 py-5 md:py-0">
+        <img src="./images/model.png" alt="" />
+      </div>
+    </section>
+    
+    <section class="cards w-full bg-slate-400 flex flex-col justify-center items-center gap-6 py-10">
+      <div class="cards-title font-bebus text-4xl">
+        Women Jacket
+      </div>
+      
+      <div class="cards-container flex flex-col justify-center items-center gap-5 w-96 shadow-lg p-7 bg-green-300">
+        <div class="cards-img w-80 bg-rose-400 p-10 rounded-lg">
+          <img src="./images/jacket-1.png" alt="">
+        </div>
+        <div class="cards-content w-80">
+          <div class="cards title">Women's Jacket</div>
+          <div class="cards-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        </div>
+        <div class="cards-footer flex justify-evenly gap-10">
+          <div class="cards-price">$234</div>
           <div class="button">
-            <button
-              class="gradient-green p-4 rounded-lg font-roboto text-white"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="white"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 inline"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-                />
+            <button class="gradient-green p-4 rounded-lg font-roboto text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 inline">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
               </svg><span class="px-2">BUY NOW</span>
             </button>
-          </div>
         </div>
-        <div class="title-img w-96 py-5 md:py-0">
-          <img src="./images/model.png" alt="" />
-        </div>
-      </section>
+      </div>
+
       
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
